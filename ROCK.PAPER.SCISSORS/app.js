@@ -11,7 +11,7 @@ let resultEl = document.getElementById('result-el')
         let a = Math.floor(Math.random()*3)
         console.log(game[a])
         playerEl.textContent = `PLAYER: ${game[0]}`
-        opponentEl.textContent = game[a]
+        opponentEl.textContent = `OPPONENT: ${game[a]}`
 
         if(opponentEl.textContent === "ROCK"){
             resultEl.textContent = "IT IS DRAW"
@@ -26,7 +26,7 @@ let resultEl = document.getElementById('result-el')
         let a = Math.floor(Math.random()*3)
 
         playerEl.textContent =  `PLAYER: ${game[1]}`
-        opponentEl.textContent = game[a]
+        opponentEl.textContent = `OPPONENT: ${game[a]}`
         if(opponentEl.textContent === "PAPER"){
             resultEl.textContent = "IT IS DRAW"
     
@@ -43,7 +43,7 @@ let resultEl = document.getElementById('result-el')
         let a = Math.floor(Math.random()*3)
 
         playerEl.textContent = `PLAYER: ${game[2]}`
-        opponentEl.textContent =  game[a]
+        opponentEl.textContent =  `OPPONENT: ${game[a]}`
         if(opponentEl.textContent === "SCISSORS"){
             resultEl.textContent = "IT IS DRAW"
     
