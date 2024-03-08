@@ -6,31 +6,37 @@ let paperEl = document.getElementById('paper-el')
 let scissorsEl = document.getElementById('scissors-el')
 let resultEl = document.getElementById('result-el')
 
+let a = Math.floor(Math.random()*3)
+let OpponentMove = game[a]
+
 
     rockEl.addEventListener("click" ,function(){
-        let a = Math.floor(Math.random()*3)
+       
+        
+        
         console.log(game[a])
         playerEl.textContent = `PLAYER: ${game[0]}`
         opponentEl.textContent = `OPPONENT: ${game[a]}`
 
-        if(opponentEl.textContent === "ROCK"){
+        if(OpponentMove == "ROCK"){
             resultEl.textContent = "IT IS A DRAW"
     
-        }else if(opponentEl.textContent === "PAPER"){
+        }else if(OpponentMove == "PAPER"){
             resultEl.textContent = "you lose"
         }else{
             resultEl.textContent ="you win"
         }
     })
     paperEl.addEventListener("click" ,function(){
-        let a = Math.floor(Math.random()*3)
+       
 
         playerEl.textContent =  `PLAYER: ${game[1]}`
         opponentEl.textContent = `OPPONENT: ${game[a]}`
-        if(opponentEl.textContent === "PAPER"){
+
+        if(OpponentMove == "PAPER"){
             resultEl.textContent = "IT IS A DRAW"
     
-        }else if(opponentEl.textContent === "SCISSORS"){
+        }else if(OpponentMove == "SCISSORS"){
             resultEl.textContent = "you lose"
         }else{
             resultEl.textContent ="you win"
@@ -39,15 +45,16 @@ let resultEl = document.getElementById('result-el')
         
         
     })
+    
     scissorsEl.addEventListener("click" ,function(){
-        let a = Math.floor(Math.random()*3)
+        
 
         playerEl.textContent = `PLAYER: ${game[2]}`
         opponentEl.textContent =  `OPPONENT: ${game[a]}`
-        if(opponentEl.textContent === "SCISSORS"){
+        if(OpponentMove == "SCISSORS"){
             resultEl.textContent = "IT IS A DRAW"
     
-        }else if(opponentEl.textContent === "ROCK"){
+        }else if(OpponentMove == "ROCK"){
             resultEl.textContent = "you lose"
         }else{
             resultEl.textContent ="you win"
