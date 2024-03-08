@@ -14,7 +14,7 @@ let resultEl = document.getElementById('result-el')
         opponentEl.textContent = `OPPONENT: ${game[a]}`
 
         if(opponentEl.textContent === "ROCK"){
-            resultEl.textContent = "IT IS DRAW"
+            resultEl.textContent = "IT IS A DRAW"
     
         }else if(opponentEl.textContent === "PAPER"){
             resultEl.textContent = "you lose"
@@ -28,7 +28,7 @@ let resultEl = document.getElementById('result-el')
         playerEl.textContent =  `PLAYER: ${game[1]}`
         opponentEl.textContent = `OPPONENT: ${game[a]}`
         if(opponentEl.textContent === "PAPER"){
-            resultEl.textContent = "IT IS DRAW"
+            resultEl.textContent = "IT IS A DRAW"
     
         }else if(opponentEl.textContent === "SCISSORS"){
             resultEl.textContent = "you lose"
@@ -45,7 +45,7 @@ let resultEl = document.getElementById('result-el')
         playerEl.textContent = `PLAYER: ${game[2]}`
         opponentEl.textContent =  `OPPONENT: ${game[a]}`
         if(opponentEl.textContent === "SCISSORS"){
-            resultEl.textContent = "IT IS DRAW"
+            resultEl.textContent = "IT IS A DRAW"
     
         }else if(opponentEl.textContent === "ROCK"){
             resultEl.textContent = "you lose"
