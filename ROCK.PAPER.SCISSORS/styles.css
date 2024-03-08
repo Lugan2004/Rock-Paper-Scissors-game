@@ -1,0 +1,50 @@
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+body{
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+button{
+    width: 105px;
+    height: 30px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    
+}
+button:hover {
+
+    font-size: large;
+    width: 115px;
+    height: 35px;
+}
+#rock-el{
+    background:brown ;
+
+
+}
+#paper-el{
+    background: cornflowerblue;
+}
+#scissors-el{
+    background: goldenrod;
+}
+#opponent-el{
+    color: red;
+}
+#player-el{
+    color: limegreen;
+}
