@@ -43,8 +43,12 @@ button:hover {
     background: goldenrod;
 }
 #opponent-el{
-    color: red;
+    color: lightgrey;
 }
 #player-el{
+    color: lightgrey;
+}
+
+#result-el{
     color: limegreen;
 }
